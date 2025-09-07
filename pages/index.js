@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from "next/link";
+import jyotimage from '../public/jyot_logo.webp';
 
 
 export default function Home() {
@@ -70,7 +71,7 @@ const Register = () => {
   
     return (
       <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-6 z-50 backdrop-blur-sm">
-        <div className="bg-white shadow-2xl rounded-3xl p-10 max-w-lg w-full relative border border-gray-100">
+        <div className="bg-white shadow-2xl rounded-3xl p-10 w-full relative border border-gray-100">
           <button
             onClick={() => setShowRegister(false)}
             className="absolute top-6 right-6 text-gray-400 hover:text-gray-600 text-3xl font-light transition-colors"
@@ -406,7 +407,8 @@ const Register = () => {
             <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100">
               <div className="text-center mb-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                  <div className="text-3xl text-white">🪔</div>
+                  <div className="text-3xl text-white"><img src={jyotimage.src}/>
+                  </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Jyot - The Eternal Flame</h3>
                 <p className="text-amber-700 italic font-medium">{'"Ignite the light within"'}</p>
@@ -422,12 +424,12 @@ const Register = () => {
                 </p>
               </div>
             </div>
-
+            
             {/* VK Movement */}
             <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100">
               <div className="text-center mb-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                  <div className="text-3xl text-white">🌍</div>
+                  <div className="text-3xl text-white"><img src={jyotimage.src}/></div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Vasudhaiva Kutumbakam Movement</h3>
                 <p className="text-red-700 italic font-medium">{'"The World is One Family"'}</p>
@@ -482,12 +484,13 @@ const Register = () => {
           </div>
           
           <div className="space-y-4">
-            <button
-              onClick={handleRegisterClick}
-              className="bg-white text-red-600 hover:bg-gray-100 px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
-            >
-              BEGIN YOUR SACRED EXPRESSION
-            </button>
+            <Link href="/register">
+              <button
+                className="bg-white text-red-600 hover:bg-gray-100 px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+              >
+                BEGIN YOUR SACRED EXPRESSION
+              </button>
+            </Link>
             <p className="text-red-200 text-sm">Registration opens soon • Limited spots available</p>
           </div>
         </div>

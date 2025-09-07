@@ -30,9 +30,11 @@ export default function Header() {
             </nav>
           </div>
           <div className="flex items-center space-x-4">
-            <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-              My Submissions
-            </button>
+            <Link href="/register">
+              <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                Register
+              </button>
+            </Link>
             <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-semibold">
               U
             </div>

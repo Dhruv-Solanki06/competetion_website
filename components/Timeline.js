@@ -21,7 +21,7 @@ export default function Timeline() {
     {
       id: 4,
       title: 'Results Announcement',
-      date: 'May 15, 2025',
+      date: 'Sept 19, 2025',
       status: 'upcoming'
     },
     {

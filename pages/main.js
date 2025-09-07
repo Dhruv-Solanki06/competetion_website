@@ -67,7 +67,7 @@ export default function MainPage() {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-3 space-y-8">
             <NoticeBoard announcements={announcements} />
