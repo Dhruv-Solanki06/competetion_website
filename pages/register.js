@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Register() {
+  const router = useRouter();
   const [form, setForm] = useState({
     name: "",
     email: "",
-    competition: "",
+    phone: "",
+    institution: "",
   });
 
   const handleChange = (e) => {
@@ -16,6 +19,8 @@ export default function Register() {
     // TODO: Hook this up with backend / Google Sheets / Firebase
     console.log("Form submitted:", form);
     alert("Registration successful! ✅");
+    // Redirect to main dashboard after successful registration
+    router.push("/main");
   };
 
   return (
@@ -26,16 +31,18 @@ export default function Register() {
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Name */}
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Your Full Name"
             value={form.name}
             onChange={handleChange}
             required
             className="w-full border border-orange-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
 
+          {/* Email */}
           <input
             type="email"
             name="email"
@@ -46,19 +53,29 @@ export default function Register() {
             className="w-full border border-orange-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
 
-          <select
-            name="competition"
-            value={form.competition}
+          {/* Phone */}
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your Mobile Number"
+            value={form.phone}
             onChange={handleChange}
             required
             className="w-full border border-orange-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
-          >
-            <option value="">Select Competition</option>
-            <option value="ai-reels">AI Reel Making</option>
-            <option value="lextoons">Lextoons</option>
-            <option value="political-toons">Political Toons</option>
-          </select>
+          />
 
+          {/* Institution */}
+          <input
+            type="text"
+            name="institution"
+            placeholder="Your Institution / College Name"
+            value={form.institution}
+            onChange={handleChange}
+            required
+            className="w-full border border-orange-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
+
+          {/* Submit */}
           <button
             type="submit"
             className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 rounded-lg transition-all"
