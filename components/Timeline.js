@@ -34,7 +34,7 @@ export default function Timeline() {
 
   return (
     <section id="timeline">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Competition Timeline</h2>
         
         <div className="relative bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-6 border border-gray-100">
@@ -42,7 +42,7 @@ export default function Timeline() {
           <div className="absolute top-6 left-9 bottom-6 w-1 bg-gradient-to-b from-red-200 via-amber-200 to-gray-200 rounded-full"></div>
           
           {/* Timeline events */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {timelineEvents.map((event) => (
               <div key={event.id} className="relative flex items-start">
                 {/* Timeline dot */}
@@ -74,16 +74,7 @@ export default function Timeline() {
             ))}
           </div>
           
-          {/* Upcoming Events Badge */}
-          <div className="mt-8 bg-gradient-to-r from-red-50 to-amber-50 rounded-xl p-4 border border-amber-100">
-            <div className="flex items-center">
-              <svg className="h-5 w-5 text-amber-500 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <h3 className="font-bold text-gray-900">Next Event</h3>
-            </div>
-            <p className="mt-2 text-sm text-gray-600">Final submission deadline in 14 days</p>
-          </div>
+          
         </div>
       </div>
     </section>

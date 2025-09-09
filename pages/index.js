@@ -431,13 +431,10 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { category: "Poetry & Literature", icon: "📝", description: "Words that unite hearts" },
-              { category: "Music & Songs", icon: "🎵", description: "Melodies of universal love" },
-              { category: "Visual Arts & Painting", icon: "🎨", description: "Colors of global harmony" },
-              { category: "Storytelling & Narrative", icon: "📚", description: "Tales of shared humanity" },
-              { category: "Digital Media & Film", icon: "🎬", description: "Visual stories of unity" },
-              { category: "Photography", icon: "📸", description: "Capturing moments of connection" },
-              { category: "Dance & Performance", icon: "💃", description: "Movement expressing oneness" }
+              { category: "AI Reel Making", icon: "🎬", description: "Craft 15-second stories using AI tools that bring global unity and creativity to life." },
+              { category: "Lextoons", icon: "🖋️", description: "Turn words into witty AI-generated cartoons that highlight values and social issues." },
+              { category: "Political Toons", icon: "🏛️", description: "Use satire and AI artistry to creatively capture political ideas and principles." },
+              { category: "Creative Expression", icon: "✨", description: "An open category for unique AI-driven storytelling, visuals, and concepts aligned with Vasudhaiva Kutumbakam." }              
             ].map((category, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-red-100 hover:border-red-300">
                 <div className="text-3xl mb-3">{category.icon}</div>
@@ -456,7 +453,7 @@ export default function Home() {
       </section>
 
       {/* About Jyot Section */}
-      <section id="about-jyot" className="relative h-[500px] overflow-hidden">
+      <section id="about-jyot" className="relative h-[600px] overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
@@ -484,7 +481,7 @@ export default function Home() {
                   <div className="h-px w-8 bg-orange-400"></div>
                   <div className="mx-3 w-1 h-1 bg-orange-400 rounded-full"></div>
                   <span className="text-orange-300 text-sm font-light tracking-widest uppercase">
-                    About
+                    Inspired by
                   </span>
                 </div>
                 
@@ -501,9 +498,9 @@ export default function Home() {
               {/* Mission Statement */}
               <div className="space-y-4">
                 <p className="text-white/90 font-light leading-relaxed">
-                  Illuminating the path toward global unity through creative expression. 
-                  Art transcends all boundaries — cultural, linguistic, and geographical.
+                Founded in 2009, Jyot is dedicated to transforming learning into meaningful action. We design programs that mix scientific temper with spiritual insight so that knowledge becomes usable, ethical, and empowering. Guided by <strong>H.H. Jainacharya Yugbhushan Suri Ji</strong>, whose work spans scripture, science and civic thought, Jyot brings together young innovators and experienced mentors to run workshops, publications, and community initiatives.
                 </p>
+                
                 
                 <p className="text-white/90 font-light leading-relaxed">
                   We invite artists worldwide to embody 
@@ -516,15 +513,29 @@ export default function Home() {
               
               {/* CTA */}
               <div className="pt-4">
-                <button className="group inline-flex items-center bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-3 rounded-full border border-white/20 hover:border-white/40 transition-all duration-300">
+                <a
+                  href="https://jyot.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-3 rounded-full border border-white/20 hover:border-white/40 transition-all duration-300"
+                >
                   <span className="font-light">Discover More</span>
-                  <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" 
-                       fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" 
-                          d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg
+                    className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
-                </button>
+                </a>
               </div>
+
             </div>
             
             {/* Right Visual Element */}
@@ -572,16 +583,16 @@ export default function Home() {
     </section>
 
       {/* Footer */}
-      <footer className="bg-red-800 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-8">
+      <footer className="bg-red-800 text-white py-10">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-6">
             <div className="text-3xl font-bold mb-2">VK Competition</div>
             <p className="text-red-200">Uniting the world through sacred expression</p>
           </div>
           
           <div className="border-t border-red-700 pt-8">
             <p className="text-red-200">
-              © 2024 Jyot Organization. All rights reserved. | 
+              © 2024 Host Organization. All rights reserved. | 
               <span className="ml-2">वसुधैव कुटुम्बकम् - The World is One Family</span>
             </p>
           </div>
