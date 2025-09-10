@@ -109,18 +109,7 @@ const generateSectionsForCompetition = (competition) => {
     • Midjourney - High-quality artistic images
     • DALL-E 3 - Creative image generation
     • Stable Diffusion - Open-source image creation
-    • Adobe Firefly - Integrated creative tools
-    
-    **Audio & Music:**
-    • Suno AI - Music and song generation
-    • ElevenLabs - Voice synthesis and audio
-    • Mubert - AI-generated background music
-    
-    **Free Resources:**
-    • Hugging Face - Open-source AI models
-    • Google Colab - Free computing resources
-    • YouTube tutorials for each tool
-    • Community Discord for support`
+    • Adobe Firefly - Integrated creative tools`
   });
 
   // Submission Guidelines
@@ -148,13 +137,7 @@ const generateSectionsForCompetition = (competition) => {
     • Technical Quality and Execution (25%)
     • Effective Use of AI Tools (20%)
     • Adherence to Requirements (15%)
-    • Overall Impact and Engagement (10%)
-    
-    **Important Notes:**
-    • Only original submissions accepted
-    • One submission per participant
-    • Late submissions will not be considered
-    • Winners announced within 2 weeks of deadline`
+    • Overall Impact and Engagement (10%)`
   });
 
   return baseSections;
