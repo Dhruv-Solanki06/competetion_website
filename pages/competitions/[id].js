@@ -41,7 +41,7 @@ export default function CompetitionDetailPage({ competition }) {
           </div>
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Competition Not Found</h1>
           <p className="text-gray-600 mb-6">
-            Sorry, we couldn't find the competition you're looking for. It may have been removed or the URL might be incorrect.
+            Sorry, we couldn&apos;t find the competition you&apos;re looking for. It may have been removed or the URL might be incorrect.
           </p>
           <Link 
             href="/competitions"
