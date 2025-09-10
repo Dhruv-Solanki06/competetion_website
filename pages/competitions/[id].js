@@ -41,7 +41,7 @@ export default function CompetitionDetailPage({ competition }) {
           </div>
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Competition Not Found</h1>
           <p className="text-gray-600 mb-6">
-            Sorry, we couldn&apos;t find the competition you&apos;re looking for. It may have been removed or the URL might be incorrect.
+            Sorry, we couldn&apos;t find the competition youre looking for. It may have been removed or the URL might be incorrect.
           </p>
           <Link 
             href="/competitions"
@@ -93,7 +93,7 @@ export default function CompetitionDetailPage({ competition }) {
         <main className="max-w-7xl mx-auto px-6 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Left Panel - Sidebar */}
-            <div className="lg:col-span-3 space-y-6">
+            <div className="lg:col-span-3 space-y-6 fixed lg:static w-full lg:w-auto">
               <SidebarNav sections={competition.sections} />
             </div>
 

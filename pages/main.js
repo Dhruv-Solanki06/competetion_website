@@ -407,23 +407,23 @@ export default function MainPage() {
           <NotificationBanner />
           
           <main className="w-full px-4 sm:px-6 lg:px-8 py-12">
-            <div className="dashboard-grid grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-7xl mx-auto">
+            <div className="dashboard-grid grid grid-cols-1 lg:grid-cols-12 gap-8 ">
               {/* Left Sidebar - Announcements */}
-              <div className="lg:col-span-3 space-y-8">
+              <div className="lg:col-span-3 space-y-8 order-2 lg:order-1">
                 <div className="component-container">
                   <NoticeBoard announcements={announcements} />
                 </div>
               </div>
 
               {/* Center Section - Competition List */}
-              <div className="lg:col-span-6 space-y-8">
+              <div className="lg:col-span-6 space-y-8 order-1 lg:order-2">
                 <div className="component-container">
                   <CompetitionList competitions={competitions} />
                 </div>
               </div>
 
               {/* Right Sidebar - Timeline */}
-              <div className="lg:col-span-3 space-y-8">
+              <div className="lg:col-span-3 space-y-8 order-3 lg:order-3">
                 <div className="component-container">
                   <Timeline events={timelineEvents} />
                 </div>
