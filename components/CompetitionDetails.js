@@ -201,10 +201,10 @@ export default function CompetitionDetails({ competition }) {
               </svg>
             </div>
             <h3 className="font-playfair text-2xl font-bold text-gray-900 mb-3">
-              Congratulations! You've reached the end
+              Congratulations! You&apos;ve reached the end
             </h3>
             <p className="font-inter text-gray-600 text-lg leading-relaxed max-w-md mx-auto mb-6">
-              You've reviewed all competition details. Ready to showcase your creativity and join the sacred expression?
+              You&apos;ve reviewed all competition details. Ready to showcase your creativity and join the sacred expression?
             </p>
             <div className="flex items-center justify-center gap-2 text-emerald-600">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
