@@ -44,7 +44,7 @@ export default function CompetitionDetailPage({ competition }) {
             Sorry, we couldn&apos;t find the competition youre looking for. It may have been removed or the URL might be incorrect.
           </p>
           <Link 
-            href="/competitions"
+            href="/main"
             className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@ export default function CompetitionDetailPage({ competition }) {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-              <Link href="/competitions" className="hover:text-blue-600 transition-colors">
+              <Link href="/main" className="hover:text-blue-600 transition-colors">
                 Competitions
               </Link>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,20 +90,15 @@ export default function CompetitionDetailPage({ competition }) {
         </div>
 
         {/* Main Content */}
-        <main className="max-w-7xl mx-auto px-6 py-8">
+        <main className="px-6 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            {/* Left Panel - Sidebar */}
-            <div className="lg:col-span-3 space-y-6 fixed lg:static w-full lg:w-auto">
-              <SidebarNav sections={competition.sections} />
-            </div>
-
-            {/* Middle Panel - Competition Details */}
-            <div className="lg:col-span-6 space-y-6">
+           {/* Middle Panel - Competition Details */}
+            <div className="lg:col-span-8 space-y-6">
               <CompetitionDetails competition={competition} />
             </div>
 
             {/* Right Panel - Submission Panel */}
-            <div className="lg:col-span-3 space-y-6">
+            <div className="lg:col-span-4 space-y-6">
               <SubmissionPanel competitionId={competition.id} />
             </div>
           </div>

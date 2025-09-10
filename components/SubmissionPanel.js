@@ -128,7 +128,7 @@ export default function SubmissionPanel({ competitionId }) {
         }
       `}</style>
 
-      <div className="lg:col-span-1">
+      <div className="lg:col-span-1 text-black">
         <div className="sticky top-8 bg-white/95 backdrop-blur-md rounded-2xl border border-orange-100/50 shadow-xl p-6 overflow-hidden relative">
           {/* Background decoration */}
           <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-orange-200/20 to-transparent rounded-full"></div>
@@ -317,7 +317,7 @@ export default function SubmissionPanel({ competitionId }) {
             </form>
 
             {/* Enhanced Help Section */}
-            <div className="mt-6 pt-4 border-t border-orange-100/50">
+            {/* <div className="mt-6 pt-4 border-t border-orange-100/50">
               <h4 className="text-sm font-semibold text-orange-800 mb-3 font-playfair">Need Help?</h4>
               <div className="space-y-2 text-xs text-orange-700/80 font-inter">
                 <div className="flex items-center gap-2">
@@ -333,7 +333,7 @@ export default function SubmissionPanel({ competitionId }) {
                   <span>Email: support@jyot.in</span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
