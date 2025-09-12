@@ -4,6 +4,8 @@ import jyotimage from '../public/jyot_logo.webp';
 import Image from 'next/image';
 import backgroundImage from "@/public/map.jpg";
 import { useRouter } from 'next/router';
+import NotificationBanner from '../components/NotificationBanner';
+
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('what-is-competition');
@@ -260,7 +262,7 @@ export default function Home() {
                   <div className="h-px w-12 bg-orange-400/60"></div>
                   <div className="mx-4 w-1 h-1 bg-orange-400 rounded-full"></div>
                   <span className="text-orange-200 text-sm font-light tracking-[0.2em] uppercase">
-                    Sacred Expression
+                  Global Celebration of Unity through Creative Expression
                   </span>
                   <div className="mx-4 w-1 h-1 bg-orange-400 rounded-full"></div>
                   <div className="h-px w-12 bg-orange-400/60"></div>
@@ -400,22 +402,19 @@ export default function Home() {
               Beyond material rewards, gain recognition as an ambassador of global unity and universal love.
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { place: "1st Prize", amount: "₹50,000", description: "Grand Champion of Unity", color: "from-yellow-400 to-yellow-600" },
-              { place: "2nd Prize", amount: "₹30,000", description: "Excellence in Expression", color: "from-gray-300 to-gray-500" },
-              { place: "3rd Prize", amount: "₹20,000", description: "Outstanding Participation", color: "from-orange-400 to-orange-600" }
-            ].map((prize, index) => (
-              <div key={index} className={`bg-gradient-to-br ${prize.color} rounded-2xl p-8 text-center text-white shadow-xl`}>
-                <h3 className="text-2xl font-bold mb-2">{prize.place}</h3>
-                <div className="text-4xl font-bold mb-2">{prize.amount}</div>
-                <p className="text-lg opacity-90">{prize.description}</p>
-              </div>
-            ))}
+
+          {/* Single Prize Pool Banner */}
+          <div className="bg-gradient-to-r from-yellow-400 to-red-500 rounded-2xl shadow-2xl p-10 text-center text-white">
+            <h3 className="text-5xl md:text-6xl font-extrabold mb-4">
+              Prize Pool of ₹3,00,000
+            </h3>
+            <p className="text-lg opacity-90">
+              And other exciting opportunities to showcase your work on global platforms 
+            </p>
           </div>
         </div>
       </section>
+
 
       {/* Competition Categories Section */}
       <section id="competition-list" className="py-20">

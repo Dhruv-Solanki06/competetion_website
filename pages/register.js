@@ -28,7 +28,7 @@ export default function Register() {
   return (
     <div className="min-h-screen flex">
       {/* Left Half - Vasudhaiva Kutumbakam Information */}
-      <div className="w-1/2 relative bg-gradient-to-br from-red-900 via-yellow-200 to-red-900 overflow-hidden">
+      <div className="w-1/2 relative bg-gradient-to-br from-red-900 via-yellow-200 to-red-900 overflow-hidden hidden sm:block">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <Image
@@ -79,7 +79,7 @@ export default function Register() {
                   <div className="h-px w-8 bg-orange-400/60"></div>
                   <div className="mx-3 w-1 h-1 bg-orange-400 rounded-full"></div>
                   <span className="text-orange-200 text-xs tracking-[0.2em] uppercase font-light">
-                    Sacred Expression
+                    Global Celebration of Unity through Creative Expression
                   </span>
                   <div className="mx-3 w-1 h-1 bg-orange-400 rounded-full"></div>
                   <div className="h-px w-8 bg-orange-400/60"></div>
@@ -136,7 +136,7 @@ export default function Register() {
       </div>
 
       {/* Right Half - Registration Form */}
-      <div className="w-1/2 bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 flex items-center justify-center p-8">
+      <div className="w-1/2 bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 flex items-center justify-center p-8 w-full sm:max-w-md mx-auto">
         <div className="bg-white shadow-2xl rounded-2xl p-10 max-w-lg w-full border border-red-100">
           <div className="text-center mb-8">
             <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
