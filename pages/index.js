@@ -92,7 +92,7 @@ export default function Home() {
               <div className="text-white font-bold text-lg">VK</div>
             </div>
             <h1 className="text-3xl font-bold text-red-700 mb-2">
-              Sacred Expression Registration
+              Registration
             </h1>
             <p className="text-gray-600">Join the global family movement</p>
           </div>
@@ -147,7 +147,7 @@ export default function Home() {
                 onClick={handleSubmit}
                 className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                Begin Sacred Expression Journey
+                Begin your Journey
               </button>
             </div>
   
@@ -268,11 +268,10 @@ export default function Home() {
                   <div className="h-px w-12 bg-orange-400/60"></div>
                 </div>
                 
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-light leading-tight">
-                  <span className="block text-white/95 mb-2">Vasudhaiva</span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-red-200 to-orange-300">
-                    Kutumbakam
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
+                  <span class="block text-white/95 mb-2 ">VASUDHAIVA KUTUMBAKAM
                   </span>
+                  <span></span>
                 </h1>
                 
                 <p className="text-xl md:text-2xl text-orange-100/90 font-light max-w-3xl mx-auto leading-relaxed mt-8">
@@ -286,7 +285,7 @@ export default function Home() {
                   onClick={handleRegisterClick}
                   className="group bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-medium py-4 px-8 rounded-full transition-all duration-300 shadow-2xl hover:shadow-orange-500/25 transform hover:-translate-y-1 text-lg"
                 >
-                  <span className="mr-2">Begin Sacred Expression</span>
+                  <span className="mr-2">Begin your journey</span>
                   <svg className="inline w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
@@ -341,9 +340,9 @@ export default function Home() {
                 icon: "🌍"
               },
               {
-                title: "Sacred Expression",
-                description: "Honoring the divine connection that binds all humanity together",
-                icon: "🎨"
+                title: "Technological Creativity",
+                description: "Harnessing AI to amplify human imagination and storytelling",
+                icon: "🤖"
               },
               {
                 title: "Cultural Celebration",
@@ -430,10 +429,10 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { category: "AI Reel Making", icon: "🎬", description: "Craft 15-second stories using AI tools that bring global unity and creativity to life." },
+              { category: "AI Reel Making", icon: "🎬", description: "Craft 1-3 minutes stories using AI tools that bring global unity and creativity to life." },
               { category: "Lextoons", icon: "🖋️", description: "Turn words into witty AI-generated cartoons that highlight values and social issues." },
               { category: "Political Toons", icon: "🏛️", description: "Use satire and AI artistry to creatively capture political ideas and principles." },
-              { category: "Creative Expression", icon: "✨", description: "An open category for unique AI-driven storytelling, visuals, and concepts aligned with Vasudhaiva Kutumbakam." }              
+              { category: "Creative Expression", icon: "✨", description: "An open category for unique AI-driven 5-7 pagees script aligned with Vasudhaiva Kutumbakam." }              
             ].map((category, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-red-100 hover:border-red-300">
                 <div className="text-3xl mb-3">{category.icon}</div>
@@ -497,7 +496,7 @@ export default function Home() {
               {/* Mission Statement */}
               <div className="space-y-4">
                 <p className="text-white/90 font-light leading-relaxed">
-                Founded in 2009, Jyot is dedicated to transforming learning into meaningful action. We design programs that mix scientific temper with spiritual insight so that knowledge becomes usable, ethical, and empowering. Guided by <strong>H.H. Jainacharya Yugbhushan Suri Ji</strong>, whose work spans scripture, science and civic thought, Jyot brings together young innovators and experienced mentors to run workshops, publications, and community initiatives.
+                Founded in 2009, Jyot is dedicated to transforming learning into meaningful action. We design programs that mix scientific temper with spiritual insight so that knowledge becomes usable, ethical, and empowering. Guided by <strong>H.H. Spiritual Sovereign Jainacharya Yugbhushansuriji Maharaja</strong>, whose work spans scripture, science and civic thought, Jyot brings together young innovators and experienced mentors to run workshops, publications, and community initiatives.
                 </p>
                 
                 
@@ -586,7 +585,7 @@ export default function Home() {
         <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6">
             <div className="text-3xl font-bold mb-2">VK Competition</div>
-            <p className="text-red-200">Uniting the world through sacred expression</p>
+            <p className="text-red-200">Uniting the world through creative expression</p>
           </div>
           
           <div className="border-t border-red-700 pt-8">

@@ -145,7 +145,7 @@ export default function Register() {
             <h2 className="text-3xl font-bold text-red-700 mb-2">
               Join the Movement
             </h2>
-            <p className="text-gray-600">Begin your sacred expression journey</p>
+            <p className="text-gray-600">Begin your journey</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -219,7 +219,7 @@ export default function Register() {
                 type="submit"
                 className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                Begin Sacred Expression Journey
+                Begin your Journey
               </button>
             </div>
 
